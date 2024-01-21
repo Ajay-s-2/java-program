@@ -1,0 +1,32 @@
+"""java program in unit one and two"""
+
+1) An integer no is given as input. your task is to find the reverse of the given no and print the reversed no if it is equal to given no. else print 0.
+solution:
+import java.util.Scanner;
+class main{
+    public static void main(String[] args) {
+        int num;
+        Scanner obj = new Scanner(System.in);
+        num = obj.nextInt();
+        main obj1 = new main();
+       int  result = obj1.task(num);
+       if (num == result)
+       {
+           System.out.println(result);
+       }
+       else
+       {
+            System.out.println(0); 
+       }
+      
+    }
+    int  task(int num){
+     int reverse = 0;
+        while(num!=0)
+        {
+            reverse = reverse*10+num%10;
+            num = num/10;
+        }
+      return reverse;
+    }
+}
